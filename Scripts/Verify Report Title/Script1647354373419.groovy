@@ -21,17 +21,17 @@ WebUI.openBrowser('https://app.powerbi.com/singleSignOn?route=groups%2f7b4737be-
 
 WebUI.waitForElementVisible(findTestObject('Email'), 20)
 
-WebUI.setText(findTestObject('Email'), 'syhussain@teksystems.com')
+WebUI.setText(findTestObject('Email'), GlobalVariable.email)
 
 WebUI.click(findTestObject('button_Submit'))
 
-WebUI.setEncryptedText(findTestObject('password'), 'Blu4UFuVwuK9i49hRS7SPg==')
+WebUI.setText(findTestObject('password'), GlobalVariable.pw)
 
 WebUI.click(findTestObject('sign-in button'))
 
 WebUI.click(findTestObject('sign-in button'))
 
-WebUI.verifyElementText(findTestObject('Report Title'), 'Spread Customer Go-live Dates')
+WebUI.verifyElementText(findTestObject('Report Title'), headerTitle)
 
 WebUI.closeBrowser()
 
@@ -39,19 +39,17 @@ WebUI.openBrowser('https://app.powerbi.com/groups/7b4737be-1aed-4acc-9954-405699
 
 WebUI.waitForElementVisible(findTestObject('Email'), 20)
 
-WebUI.setText(findTestObject('Email'), 'syhussain@teksystems.com')
+WebUI.setText(findTestObject('Email'), GlobalVariable.email)
 
 WebUI.click(findTestObject('button_Submit'))
 
-Thread.sleep(2000)
-
-WebUI.setEncryptedText(findTestObject('password'), 'Blu4UFuVwuK9i49hRS7SPg==')
+WebUI.setText(findTestObject('password'), GlobalVariable.pw)
 
 WebUI.click(findTestObject('sign-in button'))
 
 WebUI.click(findTestObject('sign-in button'))
 
-WebUI.verifyElementText(findTestObject('Report Title'), 'Spread Customer Go-live Dates')
+WebUI.verifyElementText(findTestObject('Report Title'), headerTitle)
 
 WebUI.closeBrowser()
 

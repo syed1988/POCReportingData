@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>37e09f1e-6794-4e69-9d50-e5c06cd44df5</testCaseGuid>
+   <variable>
+      <defaultValue>'Spread Customer Go-live Dates'</defaultValue>
+      <description></description>
+      <id>3673bffa-8dac-411d-883b-63844bb3c32b</id>
+      <masked>false</masked>
+      <name>headerTitle</name>
+   </variable>
 </TestCaseEntity>
